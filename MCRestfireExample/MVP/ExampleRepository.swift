@@ -21,20 +21,14 @@ class ExampleRepository {
         return await restClient.executeWith(request: request)
     }*/
     
-    func testingSomething() async -> Result<LibVersion, NetworkError> {
-        let request = RequestModel(method: .GET, path:  "author")
+    func testingSomething() async -> Result<LibVersion, MCNetworkError> {
+        let request = MCRequestModel(method: .GET, path:  "author")
         return await restClient.executeWith(request: request)
     }
     
-    func test() async -> Result<[Interest], NetworkError> {
-        let request = RequestModel(method: .GET, path: "user_interests")
+    func test() async -> Result<[Interest], MCNetworkError> {
+        let request = MCRequestModel(method: .GET, path: "user_interests")
         return await restClient.executeWith(request: request)
     }
     
-}
-
-
-struct Interest: Codable {
-    let id: Int
-    let title: String
 }

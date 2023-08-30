@@ -14,9 +14,9 @@ public enum ScopeError: Error {
 
 open class AppEnvironment: MCEnvironmentProtocol {
     
-    public var scope: RFScope?
+    public var scope: MCScopes?
     
-    public init(scope: RFScope? = .Mock) {
+    public init(scope: MCScopes? = .Mock) {
         self.scope = scope
     }
     
@@ -31,8 +31,13 @@ open class AppEnvironment: MCEnvironmentProtocol {
                 return URL(string: "somemockurl\(endPoint)")!
             case .Release:
                 return URL(string: "somereleaseurl\(endPoint)")!
+            case .Debug:
+                return URL(string: "somedebug\(endPoint)")!
+            case .Production:
+                return URL(string: "someproduction\(endPoint)")!
             case .none:
                 throw ScopeError.invalidURL
+    
         }
     }
 }

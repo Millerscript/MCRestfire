@@ -23,13 +23,16 @@
 		E6EFD8452A9FA27D00F79B87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EFD8442A9FA27D00F79B87 /* AppDelegate.swift */; };
 		E6EFD8472A9FA27D00F79B87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EFD8462A9FA27D00F79B87 /* SceneDelegate.swift */; };
 		E6EFD8492A9FA27D00F79B87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EFD8482A9FA27D00F79B87 /* ViewController.swift */; };
-		E6EFD84C2A9FA27D00F79B87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6EFD84A2A9FA27D00F79B87 /* Main.storyboard */; };
 		E6EFD84E2A9FA28100F79B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6EFD84D2A9FA28100F79B87 /* Assets.xcassets */; };
 		E6EFD8512A9FA28100F79B87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6EFD84F2A9FA28100F79B87 /* LaunchScreen.storyboard */; };
 		E6EFD8572A9FA2F200F79B87 /* MCNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EFD8562A9FA2F200F79B87 /* MCNetworkError.swift */; };
 		E6EFD85A2A9FA3A300F79B87 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EFD8592A9FA3A300F79B87 /* AppEnvironment.swift */; };
 		E6EFD85D2A9FA3E900F79B87 /* ExampleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EFD85C2A9FA3E900F79B87 /* ExampleRepository.swift */; };
 		E6EFD85F2A9FA3F300F79B87 /* ExamplePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EFD85E2A9FA3F300F79B87 /* ExamplePresenter.swift */; };
+		E6EFD8622A9FA9A400F79B87 /* LibVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EFD8612A9FA9A400F79B87 /* LibVersion.swift */; };
+		E6EFD8642A9FA9B800F79B87 /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EFD8632A9FA9B800F79B87 /* Interest.swift */; };
+		E6EFD8652A9FAC0900F79B87 /* MCRestfire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6EFD8142A9F9FA800F79B87 /* MCRestfire.framework */; };
+		E6EFD8672A9FC13400F79B87 /* MCApiClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EFD8662A9FC13400F79B87 /* MCApiClientProtocol.swift */; };
 		FAD8C98BD7333FB7CCFF4AEF /* Pods_MCRestfireExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7044A1B1BA679672923F11D /* Pods_MCRestfireExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,7 +71,6 @@
 		E6EFD8442A9FA27D00F79B87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6EFD8462A9FA27D00F79B87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E6EFD8482A9FA27D00F79B87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E6EFD84B2A9FA27D00F79B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E6EFD84D2A9FA28100F79B87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6EFD8502A9FA28100F79B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6EFD8522A9FA28100F79B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +78,9 @@
 		E6EFD8592A9FA3A300F79B87 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		E6EFD85C2A9FA3E900F79B87 /* ExampleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleRepository.swift; sourceTree = "<group>"; };
 		E6EFD85E2A9FA3F300F79B87 /* ExamplePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplePresenter.swift; sourceTree = "<group>"; };
+		E6EFD8612A9FA9A400F79B87 /* LibVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibVersion.swift; sourceTree = "<group>"; };
+		E6EFD8632A9FA9B800F79B87 /* Interest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
+		E6EFD8662A9FC13400F79B87 /* MCApiClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCApiClientProtocol.swift; sourceTree = "<group>"; };
 		E7044A1B1BA679672923F11D /* Pods_MCRestfireExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MCRestfireExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -101,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6EFD8652A9FAC0900F79B87 /* MCRestfire.framework in Frameworks */,
 				FAD8C98BD7333FB7CCFF4AEF /* Pods_MCRestfireExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,7 +124,6 @@
 				E2CD94714BBCD9901A288B87 /* Pods-MCRestfireExample.debug.xcconfig */,
 				2BC5FA5DE82E13432064FB0A /* Pods-MCRestfireExample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -175,6 +180,7 @@
 		E6EFD82C2A9FA01100F79B87 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				E6EFD8662A9FC13400F79B87 /* MCApiClientProtocol.swift */,
 				E6EFD82D2A9FA02100F79B87 /* MCApiClient.swift */,
 				E6EFD8322A9FA0FB00F79B87 /* MCRequestMethod.swift */,
 				E6EFD8342A9FA12300F79B87 /* MCStatusCodes.swift */,
@@ -198,10 +204,10 @@
 		E6EFD8432A9FA27D00F79B87 /* MCRestfireExample */ = {
 			isa = PBXGroup;
 			children = (
+				E6EFD8602A9FA99900F79B87 /* Model */,
 				E6EFD85B2A9FA3DB00F79B87 /* MVP */,
 				E6EFD8582A9FA37D00F79B87 /* App */,
 				E6EFD8482A9FA27D00F79B87 /* ViewController.swift */,
-				E6EFD84A2A9FA27D00F79B87 /* Main.storyboard */,
 				E6EFD84D2A9FA28100F79B87 /* Assets.xcassets */,
 				E6EFD84F2A9FA28100F79B87 /* LaunchScreen.storyboard */,
 				E6EFD8522A9FA28100F79B87 /* Info.plist */,
@@ -226,6 +232,15 @@
 				E6EFD85E2A9FA3F300F79B87 /* ExamplePresenter.swift */,
 			);
 			path = MVP;
+			sourceTree = "<group>";
+		};
+		E6EFD8602A9FA99900F79B87 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E6EFD8612A9FA9A400F79B87 /* LibVersion.swift */,
+				E6EFD8632A9FA9B800F79B87 /* Interest.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,7 +377,6 @@
 			files = (
 				E6EFD8512A9FA28100F79B87 /* LaunchScreen.storyboard in Resources */,
 				E6EFD84E2A9FA28100F79B87 /* Assets.xcassets in Resources */,
-				E6EFD84C2A9FA27D00F79B87 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +480,7 @@
 				E6EFD8392A9FA19900F79B87 /* MCScopes.swift in Sources */,
 				E6EFD8372A9FA17300F79B87 /* MCHttpErrorManager.swift in Sources */,
 				E6EFD82E2A9FA02100F79B87 /* MCApiClient.swift in Sources */,
+				E6EFD8672A9FC13400F79B87 /* MCApiClientProtocol.swift in Sources */,
 				E6EFD8312A9FA0D700F79B87 /* MCRequestModel.swift in Sources */,
 				E6EFD83B2A9FA1E400F79B87 /* MCEnvironmentProtocol.swift in Sources */,
 			);
@@ -484,11 +499,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6EFD8492A9FA27D00F79B87 /* ViewController.swift in Sources */,
+				E6EFD8622A9FA9A400F79B87 /* LibVersion.swift in Sources */,
 				E6EFD85F2A9FA3F300F79B87 /* ExamplePresenter.swift in Sources */,
 				E6EFD85D2A9FA3E900F79B87 /* ExampleRepository.swift in Sources */,
 				E6EFD85A2A9FA3A300F79B87 /* AppEnvironment.swift in Sources */,
 				E6EFD8452A9FA27D00F79B87 /* AppDelegate.swift in Sources */,
 				E6EFD8472A9FA27D00F79B87 /* SceneDelegate.swift in Sources */,
+				E6EFD8642A9FA9B800F79B87 /* Interest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,14 +520,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E6EFD84A2A9FA27D00F79B87 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E6EFD84B2A9FA27D00F79B87 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E6EFD84F2A9FA28100F79B87 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

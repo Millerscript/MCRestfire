@@ -18,9 +18,9 @@ open class MCRestClient {
     }
     
     // TODO: Configuration should be part of APIClient class
-    private func setupClient(request: MCRequestModel) -> MCApiClient {
+    private func setup(request: MCRequestModel) -> MCApiClient {
         var requestUrl: URL?
-        
+
         if let url = request.requestUrl {
             requestUrl = url
         } else {
@@ -36,14 +36,14 @@ open class MCRestClient {
     
     // Testing
     public func executeWith<T: Codable>(request: MCRequestModel) async -> AnyPublisher<T, Error> {
-            return try! await setupClient(request: request).send()
+            return try! await setup(request: request).send()
     }
     
     public func executeWith(request: MCRequestModel) async -> AnyPublisher<Data, URLError> {
-            return try! await setupClient(request: request).send()
+            return try! await setup(request: request).send()
     }
     
-    public func executeWith<T: Codable>(request: MCRequestModel) async -> Result<T, NetworkError> {
-        return await setupClient(request: request).send()
+    public func executeWith<T: Codable>(request: MCRequestModel) async -> Result<T, MCNetworkError> {
+        return await setup(request: request).send()
     }
 }

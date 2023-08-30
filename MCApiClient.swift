@@ -25,12 +25,6 @@ import Combine
 // print in console: 'po varName'
 // print in console: 'print varName'
 
-
-public protocol MCApiClientProtocol: AnyObject {
-    func send<T: Codable>() async throws -> AnyPublisher<T, Error>
-    func send<T: Codable>() async throws -> Result<T, MCNetworkError>
-}
-
 open class MCApiClient: NSObject, MCApiClientProtocol {
         
     private var requestUrl: URL? = nil

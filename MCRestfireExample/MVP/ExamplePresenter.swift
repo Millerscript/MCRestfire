@@ -18,9 +18,9 @@ protocol PresenterProtocol {
 class ExamplePresenter: PresenterProtocol {
     
     weak var view: ViewProtocol?
-    var repository: TestingRepository
+    var repository: ExampleRepository
 
-    init(view: ViewProtocol, repository: TestingRepository) {
+    init(view: ViewProtocol, repository: ExampleRepository) {
         self.view = view
         self.repository = repository
     }
