@@ -1,0 +1,6 @@
+framework module Pods_MCRestfireExample {
+  umbrella header "Pods-MCRestfireExample-umbrella.h"
+
+  export *
+  module * { export * }
+}
