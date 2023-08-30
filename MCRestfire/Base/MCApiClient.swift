@@ -25,7 +25,7 @@ import Combine
 // print in console: 'po varName'
 // print in console: 'print varName'
 
-open class MCApiClient: NSObject, MCApiClientProtocol {
+public class MCApiClient: NSObject, MCApiClientProtocol {
         
     private var requestUrl: URL? = nil
     

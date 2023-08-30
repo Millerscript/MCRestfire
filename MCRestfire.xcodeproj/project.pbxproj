@@ -12,7 +12,6 @@
 		E6EFD81D2A9F9FA800F79B87 /* MCRestfire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6EFD8142A9F9FA800F79B87 /* MCRestfire.framework */; };
 		E6EFD8222A9F9FA800F79B87 /* MCRestfireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EFD8212A9F9FA800F79B87 /* MCRestfireTests.swift */; };
 		E6EFD8232A9F9FA800F79B87 /* MCRestfire.h in Headers */ = {isa = PBXBuildFile; fileRef = E6EFD8172A9F9FA800F79B87 /* MCRestfire.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E6EFD82E2A9FA02100F79B87 /* MCApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EFD82D2A9FA02100F79B87 /* MCApiClient.swift */; };
 		E6EFD8312A9FA0D700F79B87 /* MCRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EFD8302A9FA0D700F79B87 /* MCRequestModel.swift */; };
 		E6EFD8332A9FA0FB00F79B87 /* MCRequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EFD8322A9FA0FB00F79B87 /* MCRequestMethod.swift */; };
 		E6EFD8352A9FA12300F79B87 /* MCStatusCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EFD8342A9FA12300F79B87 /* MCStatusCodes.swift */; };
@@ -33,6 +32,7 @@
 		E6EFD8642A9FA9B800F79B87 /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EFD8632A9FA9B800F79B87 /* Interest.swift */; };
 		E6EFD8652A9FAC0900F79B87 /* MCRestfire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6EFD8142A9F9FA800F79B87 /* MCRestfire.framework */; };
 		E6EFD8672A9FC13400F79B87 /* MCApiClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EFD8662A9FC13400F79B87 /* MCApiClientProtocol.swift */; };
+		E6EFD8692A9FC66800F79B87 /* MCApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EFD8682A9FC66700F79B87 /* MCApiClient.swift */; };
 		FAD8C98BD7333FB7CCFF4AEF /* Pods_MCRestfireExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7044A1B1BA679672923F11D /* Pods_MCRestfireExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,7 +59,6 @@
 		E6EFD8172A9F9FA800F79B87 /* MCRestfire.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCRestfire.h; sourceTree = "<group>"; };
 		E6EFD81C2A9F9FA800F79B87 /* MCRestfireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MCRestfireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6EFD8212A9F9FA800F79B87 /* MCRestfireTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCRestfireTests.swift; sourceTree = "<group>"; };
-		E6EFD82D2A9FA02100F79B87 /* MCApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCApiClient.swift; sourceTree = SOURCE_ROOT; };
 		E6EFD8302A9FA0D700F79B87 /* MCRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCRequestModel.swift; sourceTree = "<group>"; };
 		E6EFD8322A9FA0FB00F79B87 /* MCRequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCRequestMethod.swift; sourceTree = "<group>"; };
 		E6EFD8342A9FA12300F79B87 /* MCStatusCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCStatusCodes.swift; sourceTree = "<group>"; };
@@ -81,6 +80,7 @@
 		E6EFD8612A9FA9A400F79B87 /* LibVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibVersion.swift; sourceTree = "<group>"; };
 		E6EFD8632A9FA9B800F79B87 /* Interest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
 		E6EFD8662A9FC13400F79B87 /* MCApiClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCApiClientProtocol.swift; sourceTree = "<group>"; };
+		E6EFD8682A9FC66700F79B87 /* MCApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCApiClient.swift; sourceTree = "<group>"; };
 		E7044A1B1BA679672923F11D /* Pods_MCRestfireExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MCRestfireExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -181,7 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				E6EFD8662A9FC13400F79B87 /* MCApiClientProtocol.swift */,
-				E6EFD82D2A9FA02100F79B87 /* MCApiClient.swift */,
+				E6EFD8682A9FC66700F79B87 /* MCApiClient.swift */,
 				E6EFD8322A9FA0FB00F79B87 /* MCRequestMethod.swift */,
 				E6EFD8342A9FA12300F79B87 /* MCStatusCodes.swift */,
 				E6EFD8362A9FA17300F79B87 /* MCHttpErrorManager.swift */,
@@ -479,9 +479,9 @@
 				E6EFD83D2A9FA22A00F79B87 /* MCRestClient.swift in Sources */,
 				E6EFD8392A9FA19900F79B87 /* MCScopes.swift in Sources */,
 				E6EFD8372A9FA17300F79B87 /* MCHttpErrorManager.swift in Sources */,
-				E6EFD82E2A9FA02100F79B87 /* MCApiClient.swift in Sources */,
 				E6EFD8672A9FC13400F79B87 /* MCApiClientProtocol.swift in Sources */,
 				E6EFD8312A9FA0D700F79B87 /* MCRequestModel.swift in Sources */,
+				E6EFD8692A9FC66800F79B87 /* MCApiClient.swift in Sources */,
 				E6EFD83B2A9FA1E400F79B87 /* MCEnvironmentProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
