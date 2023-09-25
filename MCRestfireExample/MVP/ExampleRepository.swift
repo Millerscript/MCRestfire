@@ -27,7 +27,9 @@ class ExampleRepository {
     }
     
     func test() async -> Result<[Interest], MCNetworkError> {
-        let request = MCRequestModel(method: .GET, path: "user_interests")
+        var request = MCRequestModel(method: .GET, path: "user_topics")
+        let userParameter = URLQueryItem(name: "user", value: "1")
+        request.queryParams.append(userParameter)
         return await restClient.executeWith(request: request)
     }
     

@@ -188,7 +188,7 @@ public class MCApiClient: NSObject, MCApiClientProtocol {
     }
         
     public func send<T: Codable>() async throws -> AnyPublisher<T, Error> {
-                
+        
         guard var request = initRequest(baseURL: requestUrl) else { fatalError("Invalid URL") }
         
         setHttpRequestBody(with: self.configuration.body, request: &request)

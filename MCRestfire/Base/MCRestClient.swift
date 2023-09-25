@@ -26,12 +26,21 @@ open class MCRestClient {
         } else {
             requestUrl = try? environment.getUrl(endPoint: request.path)
         }
-
+        
         var configuration = request
-        configuration.requestUrl = requestUrl
-        configuration.timeOut = request.timeOut
+        configuration.requestUrl = getURLComponents(with: requestUrl!, request: request).url
         
         return MCApiClient(configuration: configuration)
+    }
+        
+    private func getURLComponents(with url: URL, request: MCRequestModel) -> URLComponents {
+        var components = URLComponents(url: url, resolvingAgainstBaseURL: true)
+        
+        if request.queryParams.count > 0 {
+            components?.queryItems = request.queryParams
+        }
+        
+        return components!
     }
     
     // Testing
